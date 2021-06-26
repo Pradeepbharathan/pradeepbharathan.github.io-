@@ -1,0 +1,424 @@
+.fa-hand-pointer{
+color: black;    
+}
+
+.badge{
+    box-sizing: border-box;
+    box-shadow: 2px 10px 15px yellow;
+}
+
+
+.fa-smile-wink{
+    color:yellow;
+}
+.fa-home{
+    color: black;
+}
+.fa-book{
+    color:black;
+}
+.fa-users{
+    color:black;
+}
+.fa-brain{
+    color:black;
+}
+.fa-university{
+    color: black;
+}
+.navbar{
+    box-sizing: border-box;
+    box-shadow: 1px 5px 9px black;
+    position:fixed  !important ;
+    width:83%;
+    
+}
+
+.h2 i{
+    color:palegreen;
+    padding-left: 15px;
+}
+.nav-link{
+    border-bottom: 1px solid white transparent;
+    color: yellow !important;
+    margin-right: 20px;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+.navbar span{
+    color: black;
+    
+}
+
+/* home */
+#home{
+    
+    min-height:630px;
+    width: 100%;
+    background: linear-gradient(rgba(235, 21, 206, 0.4),rgba(5, 212, 5, 0.2)),url(./image-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section .forAnimation{
+    display: flex;
+    color: white;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}   
+
+#home p:nth-child(1){
+    animation-delay:0.5s ;
+}
+
+#home p:nth-child(2){
+    animation-delay:3s ;
+}
+
+#home p:nth-child(3){
+    animation-delay:6s ;
+}
+#home p:nth-child(4){
+    animation-delay:9s ;
+}
+
+@keyframes text{
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    }
+
+@media screen and (max-width:576px){
+    #home{
+        height: 400px;
+       
+
+    } 
+
+    #home p{
+        font-size: 20px;
+    }
+}    
+
+
+/* home-end */
+
+/* about start */
+
+#about{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+    background-color:lightblue;
+    background: linear-gradient(rgba(35, 238, 238, 0.4),rgba(63, 17, 228, 0.6));
+}
+
+.circle{
+    height: 500px;
+    width: 500px;
+    background-color:lightskyblue;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 3px 25px blue;
+    transition: 1s;
+   margin-top: 10%;
+}
+.circle h3{
+    margin-left:25%;
+}
+
+
+.circle img{
+    display: flex;
+    position: absolute ;
+    height: 300px;
+    margin-top: 100px;
+    left: 20%;
+   box-shadow: 0px 5px 12px black;
+   border-radius: 50%; 
+}
+
+.circle:hover{
+    width:800px ;
+    height: 500px;
+    border-radius: 20px;
+    transition: 1s;
+    
+}
+
+.circle:hover img{
+    left: 5%;
+    bottom: 15%;
+}
+
+.circle:hover .aboutText{
+    color:black;
+    margin-top: 15px;
+    margin-left: 45%;
+    margin-right: 10px;
+    margin-bottom: 15%;
+    padding: 20px;
+    font-size: 22px;
+    text-align: justify;
+    letter-spacing: .8px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 12px blue;
+    border-radius: 20px;
+    opacity: 1;
+}
+.circle .aboutText{
+ opacity: 0;   
+}    
+
+@media screen and (max-width:576px){
+ 
+ 
+.circle img{
+    display: flex;
+    position: absolute ;
+    height: 300px;
+    margin-top: 40px;
+    left: 13%;
+   box-shadow: 0px 5px 12px black;
+    border-radius: 50%;
+}
+    .circle{
+        height: 400px;
+        width: 400px;
+        background-color:lightskyblue;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0px 3px 25px blue;
+        transition: 1s;
+       
+    }   
+
+    .circle:hover img{
+        left: 11%;
+        
+        top:2px;
+    }
+    .circle:hover{
+        width:380px ;
+        height:max-content;
+        border-radius: 20px;
+        transition: 1s;
+        
+    }    
+
+    .circle:hover .aboutText{
+        color:black;
+        margin-top: 100%;
+        margin-left: 1px;
+        margin-right: 10px;
+        margin-bottom: 15px;    
+        padding: 2px;
+        font-size: 16px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 12px blue;
+        border-radius: 20px;
+        opacity: 1;
+        width: 100%;
+
+    }
+    .circle .aboutText{
+     
+     margin-top: 100%;
+        opacity: 0;   
+    }    
+
+    #about{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:fit-content;
+        background-color:lightblue;
+        background: linear-gradient(rgba(35, 238, 238, 0.4),rgba(63, 17, 228, 0.6));
+    }
+}
+
+/* about end */
+
+/* skills-start */
+#skills{
+    height: 650px;
+    background:linear-gradient(grey,rgba(192, 39, 128, 0.5));
+}
+#skills .forAdjust{
+    margin-top: 15px;
+}
+
+.card{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    height:450px ;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 5px 12px black;
+}
+
+.card-header h2{
+    color: black;
+    text-shadow: 2px 1px blue;
+}
+
+@media screen and (max-width:576px){
+
+    .navbar{
+        box-sizing: border-box;
+        box-shadow: 1px 5px 9px black;
+        position:sticky !important ;
+        width:100%;
+        
+    }
+
+    #skills{
+        height: 500px;
+        background:linear-gradient(grey,white);
+    }
+
+    .card{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height:550px ;
+        box-sizing: border-box;
+        border-radius: 4px;
+        box-shadow: 0px 5px 12px black;
+    }
+}
+
+section h2{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* skills-end */
+
+/* for edu */
+#Edu-Q{
+    background: linear-gradient(rgba(143, 199, 12, 0.596),rgba(92, 202, 48, 0.61));
+    height: 630px;
+    margin-top:10px;
+    
+}
+
+table{
+    height: 450px;
+    margin-top: 12%;
+}
+
+
+@media screen and (max-width:576px){
+    table{
+        height: 350px;
+        margin-top: 90px;;
+        font-size: 15px;
+    }
+
+    #home{
+        min-height:350px;
+        width: 100%;
+        /*background-image: url(./1624347463130.jpg) ;*/
+        background: linear-gradient(rgba(235, 21, 206, 0.4),rgba(5, 212, 5, 0.2)),url(./image-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        }
+
+}
+/* edu over */
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+ 
+ 
+    .circle img{
+        display: flex;
+        position: absolute ;
+        height: 300px;
+        margin-top: 40px;
+        left: 13%;
+       box-shadow: 0px 5px 12px black;
+        border-radius: 50%;
+    }
+        .circle{
+            height: 400px;
+            width: 400px;
+            background-color:lightskyblue;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0px 3px 25px blue;
+            transition: 1s;
+           
+        }   
+    
+        .circle:hover img{
+            left: 11%;
+            
+            top:2px;
+        }
+        .circle:hover{
+            width:380px ;
+            height:max-content;
+            border-radius: 20px;
+            transition: 1s;
+            
+        }    
+    
+        .circle:hover .aboutText{
+            color:black;
+            margin-top: 100%;
+            margin-left: 1px;
+            margin-right: 10px;
+            margin-bottom: 15px;    
+            padding: 2px;
+            font-size: 16px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 12px blue;
+            border-radius: 20px;
+            opacity: 1;
+            width: 100%;
+    
+        }
+        .circle .aboutText{
+         
+         margin-top: 100%;
+            opacity: 0;   
+        }    
+    
+        #about{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:fit-content;
+            background-color:lightblue;
+            background: linear-gradient(rgba(35, 238, 238, 0.4),rgba(63, 17, 228, 0.6));
+ 
+        }
+
+
+    }
+    
+
+
